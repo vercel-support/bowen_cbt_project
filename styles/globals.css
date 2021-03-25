@@ -1,16 +1,188 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+html,body{
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color:#fff;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+.wrapper{
+    width: 100%;
+    height: 100%;
 }
-
-* {
-  box-sizing: border-box;
+.has-error{
+    border-color: red;
+}
+.has-error .help-block{
+    color: red;
+}
+.form-group {
+    margin-bottom: 30px;
+}
+label {
+    text-align: left;
+    font-size: 15px;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+select{
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #555;
+    background-color: #fff;
+    width: 100%;
+    margin: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.form-control {
+    margin: 5px 0px;
+    display: block;
+    width:  100%;
+    padding: 16px 10px;
+    font-size: 14px;
+    line-height: 1.42;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    font-family: "Poppins", sans-serif;
+}
+.btn {
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    padding: 20px 12px;
+    margin: 15px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-width: 180px;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.btn-submit{
+    background-color: #030233;
+    color: white;
+}
+.btn-submit:hover{
+    background-color: #171658;
+    color: white;
+}
+.btn:focus,select:focus,input:focus{
+    outline: none;
+}
+.btn-create {
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    width: 95%;
+}
+.btn-create:hover{
+    background-color: rgb(245, 77, 77);
+    color: white;
+}
+.d-none{
+    display: none;
+}
+.login-form h2,.register-form h2{
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    margin: 15px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin: 0;
+    height: 100%;
+}
+.welcome-banner{
+    /* background: linear-gradient(0deg, rgba(17, 17, 17, 0.726), rgba(0, 0, 0, 0.795)), url("./DSC_1026-1024x698.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.alert {
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+ol{
+    line-height: 1.4;
+}
+p{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.welcome_bg{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+}
+.register-form .form-group {
+    margin-bottom: 10px;
+}
+.login-form,.register-form{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+footer{
+    margin-top: -10px;
 }
