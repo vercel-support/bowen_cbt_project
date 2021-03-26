@@ -1,5 +1,5 @@
 import Header from '../components/Header'
-import Link from 'next/Link'
+//import Link from 'next/Link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import { FiEye, FiEyeOff } from 'react-icons/fi'
@@ -133,10 +133,10 @@ export default function SignIn() {
                                         <div className="my-6 text-center">
                                             <p className="text-black font-medium text-base">
                                                 Is this your first time here?
-                                            <Link href="/register">
-                                                    <a className="pl-2 text-base text-blue-700 hover:text-red">Click here to Register</a>
-                                                </Link>
                                             </p>
+                                            {/* <Link href="/register">
+                                                <a className="pl-2 text-base text-blue-700 hover:text-red">Click here to Register</a>
+                                            </Link> */}
                                         </div>
                                     </div>
                                 </div>
