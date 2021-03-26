@@ -73,23 +73,23 @@ export default function SignUp() {
     const handleCreateAccount = (e) => {
         e.preventDefault();
          setLoading(true);
-        axios.post('/api/v1/auth/register', {
-            surname, firstname, matric_number, email, college, dept
-        }).then(res => {
-            setEmail('');
-            setFirstName('');
-            setSurname('');
-            setMatricNumber('');
-            setCollege('');
-            setDept("");
-            setLoading(false);
-        }).catch(err => {
-            setLoading(false);
-            if (err.response.data.status === 401) {
-            } else {
-                console.log(err);
-            }
-        });
+        // // axios.post('/api/v1/auth/register', {
+        // //     surname, firstname, matric_number, email, college, dept
+        // // }).then(res => {
+        // //     setEmail('');
+        // //     setFirstName('');
+        // //     setSurname('');
+        // //     setMatricNumber('');
+        // //     setCollege('');
+        // //     setDept("");
+        // //     setLoading(false);
+        // // }).catch(err => {
+        // //     setLoading(false);
+        // //     if (err.response.data.status === 401) {
+        // //     } else {
+        // //         console.log(err);
+        // //     }
+        // // });
     }
 
     return (
