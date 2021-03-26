@@ -1,5 +1,5 @@
 import Header from '../components/Header'
-import Link from 'next/Link'
+// import Link from 'next/Link'
 import * as React from 'react'
 import axios from 'axios';
 
@@ -266,9 +266,9 @@ export default function SignUp() {
                                         <div className="my-6 text-center">
                                             <p className="text-black font-medium text-base">
                                             Already have an account?
-                                                <Link href="/">
+                                                {/* <Link href="/">
                                                     <a className="pl-2 text-base text-blue-700 hover:text-red">Click here to Login</a>
-                                                </Link>
+                                                </Link> */}
                                             </p>
                                         </div>
                                     </div>
