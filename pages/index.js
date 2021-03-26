@@ -56,8 +56,8 @@ export default function SignIn() {
                 <Header title="Login Page" />
                 <div className="w-full h-full">
                     <div className=" w-full h-full flex flex-row">
-                        <div className="bg_overlay lg:block hidden w-1/2 h-full px-20">
-                            <div className="h-full w-full flex flex-col justify-center text-left text-white">
+                        <div className="lg:block hidden w-1/2 h-full px-20">
+                            <div className="h-full w-full flex flex-col justify-center text-left">
                                 <h1 className="text-5xl font-extrabold py-5 mb-4">Hello, Bowenite</h1>
                                 <h2 className="text-3xl font-extrabold py-3">Instructions</h2>
                                 <p className="text-lg font-normal pt-2">
