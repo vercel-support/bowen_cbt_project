@@ -1,9 +1,9 @@
 import Header from '../components/Header'
-//import Link from 'next/Link'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import { FiEye, FiEyeOff } from 'react-icons/fi'
-import axios from 'axios'
+//import axios from 'axios'
 
 export default function SignIn() {
     const [matric_number, setMatricNumber] = React.useState('');
@@ -134,9 +134,9 @@ export default function SignIn() {
                                             <p className="text-black font-medium text-base">
                                                 Is this your first time here?
                                             </p>
-                                            {/* <Link href="/register">
+                                            <Link href="/register">
                                                 <a className="pl-2 text-base text-blue-700 hover:text-red">Click here to Register</a>
-                                            </Link> */}
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
