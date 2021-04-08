@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+import Header from '../components/header'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
